@@ -16,4 +16,5 @@ FetchContent_MakeAvailable(glfw)
 
 target_compile_features(gindo PUBLIC c_std_99)
 target_include_directories(gindo PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(gindo PRIVATE glfw)
 target_link_libraries(gindo_test PRIVATE gindo)
